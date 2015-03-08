@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Creative Gooey Effects: Selection</title>
+		<meta name="description" content="Practical examples of how to apply the Gooey effect by Lucas Bebber" />
+		<meta name="keywords" content="gooey, effect, inspiration, web design, example, css, svg, filter" />
+		<meta name="author" content="Lucas Bebber for Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/vicons/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/select.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body class="demo-4">
+		<div class="container">
+			<header class="codrops-header">
+				<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Tutorials/PlayfulTrampolineEffect/" title="Previous Demo"><span>Previous Demo</span></a>
+					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=23487" title="Back to the article"><span>Back to the Codrops article</span></a>
+				</div>
+				<h1>Creative Gooey Effects <span>by <a href="http://twitter.com/lucasbebber">Lucas Bebber</a></span></h1>
+				<nav class="codrops-demos">
+					<a href="index.html">Chat App</a>
+					<a href="menu.html">Menu</a>
+					<a href="pagination.html">Pagination</a>
+					<a class="current-demo" href="select.html">Selection</a>
+					<a href="send.html">Loader</a>
+					<a href="player.html">Music Visualizer</a>
+				</nav>
+			</header>
+			<div class="content">
+				<div class="container">
+					<div class="selection-highlights"></div>
+					<div class="selection-content"></div>
+				</div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+			  <defs>
+			    <filter id="goo">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -6" result="goo" />
+			      <feComposite in="SourceGraphic" in2="goo" operator="atop" result="goo"/>
+			    </filter>
+			  </defs>
+			</svg>
+			<!-- Related demos -->
+			<section class="content content--related">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a class="media-item" href="http://tympanus.net/Development/ElasticSVGElements/">
+					<img class="media-item__img" src="img/related/MorphingShapeEffects.png">
+					<h3 class="media-item__title">Elastic SVG Elements</h3>
+				</a>
+				<a class="media-item" href="http://tympanus.net/Development/OffCanvasMenuEffects/">
+					<img class="media-item__img" src="img/related/OffCanvasMenuEffects.png">
+					<h3 class="media-item__title">Off-Canvas Menu Effects</h3>
+				</a>
+			</section>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/TweenMax.min.js"></script>
+			<script src="js/select.js"></script>
+		</div><!-- /container -->
+	</body>
+</html>
