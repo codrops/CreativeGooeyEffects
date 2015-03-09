@@ -59,6 +59,13 @@ button:focus {
 	text-align: left;
 }
 
+.info {
+	text-align: center;
+	padding-top: 2.5em;
+	font-size: 0.85em;
+	font-weight: 600;
+}
+
 /* Header */
 .codrops-header {
 	padding: 2em 0 4em;

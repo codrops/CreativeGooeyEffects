@@ -58,7 +58,7 @@
 	max-width: 350px;
 	background: #fff;
 	padding: 8px 14px;
-	border-radius: 2px;
+	border-radius: 18px;
 	min-width: 0;
 }
 
@@ -191,7 +191,7 @@
 	position: absolute;
 	top: -20px;
 	font-size: 12px;
-	color: #9bc6de;
+	color: #2B8EC2;
 }
 
 .chat-info-typing {
