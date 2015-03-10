@@ -32,11 +32,6 @@ $(document).ready(function(){
 			.addClass("fa fa-fw fa-image")
 			.appendTo($imgContainer)
 
-		// var $img=$("<div/>")
-		// 	// .attr("src","http://lorempixel.com/150/150?"+i)
-		// 	.appendTo($label)
-		// ;
-
 	};
 
 	var toggleCheckboxHandler=function(event){

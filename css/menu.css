@@ -1,7 +1,7 @@
 .menu {
 	width: 300px;
 	height: 200px;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 	position: relative;
 	-webkit-filter: url("#goo");
 	filter: url("../menu.html#goo");
@@ -79,7 +79,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: #913737;
+	color: #AD4C4C;
 }
 
 .menu-item-button:hover {

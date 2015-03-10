@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 			TweenMax.to($cur,0.4+((buttonsMid-dist)*0.1),{
 				x:0,
-				scale:1,
+				scale:.95,
 				ease:Quad.easeInOut,
 			});
 				

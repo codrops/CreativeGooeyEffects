@@ -130,18 +130,23 @@ $(document).ready(function(){
 		return -distanceCoverFromDrops-(Math.abs((x+(barWidth/2))-coverCenter)*0.314)
 	}
 
-	$bars.each(function(){
-		var $cur=$(this);
-		$cur.attr("data-scale",0.5);
-		TweenMax.set($cur,{
-			scaleY:0
-		});
-		$cur.animBar();
+	function start() {
+		$bars.each(function(){
+			var $cur=$(this);
+			$cur.attr("data-scale",0.5);
+			TweenMax.set($cur,{
+				scaleY:0
+			});
+			$cur.animBar();
+		})
+	}
+
+	start();
+
+	$(".play-pause-button").click(function(){
+		paused=!paused;
+		if(!paused) {
+			start();
+		}
 	})
-
-	// $(".play-pause-button").click(function(){
-	// 	paused=!paused;
-	// })
-
-	
 })

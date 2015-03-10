@@ -354,24 +354,3 @@ $(document).ready(function(){
 	gooOff();
 	updateChatHeight();
 })
-
-// $(function() {
-// 	var txt = $('.chat-input'),
-// 		hiddenDiv = $(document.createElement('div')),
-// 		content = null;
-
-//     hiddenDiv.addClass('chat-input-hidden');
-
-//     $('body').append(hiddenDiv);
-
-//     txt.on('keyup', function () {
-
-// 		content = $(this).val();
-
-// 		content = content.replace(/\n/g, '<br>');
-// 		hiddenDiv.html(content + '<br>');
-
-// 		$(this).css('height', hiddenDiv.height());
-
-//     });
-// });

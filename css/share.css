@@ -30,13 +30,20 @@
 }
 .share-button {
   font-size: 30px;
-  background: #ccc;
+  background: #737070;
   transform: scale(0.95, 0.95);
   color: #222;
 }
+a.share-button {
+  color: #3D4444;
+}
+a.share-button:hover, 
+a.share-button:focus {
+  color: #dfd7d7;
+}
 .share-toggle-button {
   z-index: 9;
-  background: #f46;
+  background: #666;
   font-size: 20px;
 }
 .share-items {
