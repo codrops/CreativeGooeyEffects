@@ -5,9 +5,6 @@ $(document).ready(function(){
 		,itemsNum=20
 	;
 
-	$(document).mousedown(function(event){
-		event.preventDefault();
-	})
 	for (var i = 0; i < itemsNum; i++) {
 		var id="selection-check-"+i;
 		var $checkbox=$("<input/>")
@@ -43,17 +40,11 @@ $(document).ready(function(){
 	};
 
 	var toggleCheckboxHandler=function(event){
-		var $checkbox=$("#"+$(this).attr("for"));
-		$checkbox.prop("checked",!$checkbox.prop("checked"));
-		$(this).attr("data-checked",$checkbox.prop("checked"));
+		var $checkbox=$(this);
+		var $label=$("label[for='"+$checkbox.attr("id")+"']");
+		$label.attr("data-checked",$checkbox.prop("checked"));
 
 	}
+	$(".selection-checkbox").change(toggleCheckboxHandler);
 
-	//makes checkboxes selectable on mousedown
-	$("label").on("touchstart",toggleCheckboxHandler);
-	$("label").mousedown(toggleCheckboxHandler);
-
-	$("label").click(function(event){
-		event.preventDefault();
-	})
 })
