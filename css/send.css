@@ -1,6 +1,8 @@
 .send {
 	position: relative;
-	height: 260px;
+	width:200px;
+	height: 200px;
+	margin: 0 auto;
 	-webkit-filter: url("#goo");
 	filter: url("../send.html#goo");
 }
