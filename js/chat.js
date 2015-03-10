@@ -82,7 +82,7 @@ $(document).ready(function(){
 			.append($messageBubble.clone())
 			.appendTo($effectContainer)
 			.css({
-				left:$input.position().left+(parseFloat($input.css("margin-left"))),
+				left:$input.position().left-12,
 				top:$input.position().top+bleeding+inputHeightDiff
 			})
 		;

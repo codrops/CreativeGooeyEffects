@@ -88,12 +88,13 @@
 
 .chat-input-bar {
 	position: relative;
+	background:#32A8E6;
 }
 
 .chat-input-wrapper {
 	position: relative;
 	z-index: 2;
-	background: #32A8E6;
+	/*background: #32A8E6;*/
 	padding: 0.5em 0;
 	border-radius: 0 0 2px 2px;
 	color: #fff;
