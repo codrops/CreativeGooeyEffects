@@ -37,9 +37,44 @@
 				</nav>
 			</header>
 			<div class="content">
-				
+				<div class="share">
+					<button class="share-toggle-button">
+						<i class="share-icon fa fa-share-alt"></i>
+					</button>
+					<ul class="share-items">
+						<li class="share-item">
+							<a href="#" class="share-button">
+								<i class="share-icon fa fa-facebook"></i>
+							</a>
+						</li>
+						<li class="share-item">
+							<a href="#" class="share-button">
+								<i class="share-icon fa fa-twitter"></i>
+							</a>
+						</li>
+						<li class="share-item">
+							<a href="#" class="share-button">
+								<i class="share-icon fa fa-pinterest"></i>
+							</a>
+						</li>
+						<li class="share-item">
+							<a href="#" class="share-button">
+								<i class="share-icon fa fa-tumblr"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+			  <defs>
+			    <filter id="goo">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+			      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+			    </filter>
+			  </defs>
+			</svg>
 			<!-- Related demos -->
 			<section class="content content--related">
 				<p>If you enjoyed this demo you might also like:</p>
