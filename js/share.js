@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 		menuOpen?openShareMenu():closeShareMenu();
 	}
-	$toggleButton.on("mousedown touchstart",function(){
+	$toggleButton.on("mousedown",function(){
 		toggleShareMenu();
 	})
 	
