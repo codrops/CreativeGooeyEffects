@@ -41,9 +41,9 @@ $(document).ready(function(){
 				ease:Quad.easeOut,
 				onComplete:function(){
 					TweenMax.to($bar,v*0.6,{
-						scaleY:0,
+						scaleY:0.1,
 						attr:{
-							"data-scale":0
+							"data-scale":0.1
 						},
 						ease:Quad.easeIn,
 						onComplete:function(){
