@@ -5,7 +5,7 @@
 }
 
 .chat-window {
-	width: 340px;
+	width: 310px;
 	margin: 0 auto;
 	overflow: hidden;
 	border: 0px solid #36383a;
@@ -13,6 +13,13 @@
 	color: #474c57;
 	border-radius: 20px;
 	font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width:380px) {
+	.chat-window {
+		border: none;
+		border-radius: 0px;
+	}
 }
 
 .chat-window a {

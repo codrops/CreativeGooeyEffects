@@ -1,18 +1,19 @@
 .share {
-  width: 600px;
+  max-width: 600px;
   height: 100px;
   margin: 0 auto;
   -webkit-filter: url("#goo");
   filter: url("../share.html#goo");
   position: relative;
 }
+
 .share-button,
 .share-toggle-button {
   position: absolute;
   display: inline-block;
   left: 50%;
   top: 50%;
-  border-radius: 1000px;
+  border-radius: 50%;
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -24,33 +25,41 @@
   border: none;
   outline: none;
 }
+
 .share-button:hover,
 .share-toggle-button:hover {
   color: #fff;
 }
+
 .share-button {
   font-size: 30px;
   background: #737070;
+  -webkit-transform: scale(0.95, 0.95);
   transform: scale(0.95, 0.95);
   color: #222;
 }
+
 a.share-button {
   color: #3D4444;
 }
+
 a.share-button:hover, 
 a.share-button:focus {
   color: #dfd7d7;
 }
+
 .share-toggle-button {
   z-index: 9;
   background: #666;
   font-size: 20px;
 }
+
 .share-items {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .share-item {
   display: inline-block;
 }

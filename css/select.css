@@ -1,5 +1,5 @@
-.container {
-	width: 800px;
+.select-container {
+	max-width: 800px;
 	position: relative;
 	margin: 0 auto;
 }
@@ -89,4 +89,22 @@
 
 .selection-item[data-checked="true"] .fa {
 	opacity: 0;
+}
+
+@media screen and (max-width:380px) {
+	.selection-highlight,
+	.selection-item {
+		width: 100px;
+		height: 100px;
+	}
+
+	.selection-item {
+		line-height: 100px;
+	}
+
+	.selection-item-container {
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+	}
 }
