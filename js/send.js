@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var $sendButton=$(".send-button")
 		,$sendIcon=$(".send-icon")
 		,$sentIcon=$(".sent-icon")
+		,$sentBg=$(".sent-bg")
 		,$indicatorDots=$(".send-button,.send-indicator-dot")
 	$sendButton.click(function(event) {
 		send();
@@ -47,11 +48,19 @@ $(document).ready(function(){
 			startCircleAnim($(this),50,0.1,1+(i*0.2),1.1+(i*0.3));
 		})
 
+
 		setTimeout(function(){
+			// success anim start
+			// close circle
 			$indicatorDots.each(function(i){
 				stopCircleAnim($(this),0.8+(i*0.1));
 			});
+			TweenMax.to($sentBg,0.7,{
+				delay:.7,
+				opacity:1
+			})
 
+			// show icon
 			setTimeout(function(){
 				setGoo();
 
@@ -72,7 +81,11 @@ $(document).ready(function(){
 					ease:Back.easeOut
 				});
 
+				// back to normal
 				setTimeout(function(){
+					TweenMax.to($sentBg,0.4,{
+						opacity:0
+					});
 					TweenMax.to($sentIcon,0.2,{
 						opacity:0,
 						onComplete:function(){
